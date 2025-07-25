@@ -1,0 +1,31 @@
+.navbar {
+  background-color: #0e1e25;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex; 
+  justify-content: space-between; /* Que haya espacio entre los elementos */
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  position: sticky; /* Este en la parte de abajo */
+  top: 0; /* Para que se quede fijo en la parte superior */
+  z-index: 100; /* Para que este por encima de otros elementos */
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00bfa6;
+}
+
+.navbar-links a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none; /* Sin subrayado */
+  font-weight: 500; /* Para que el texto sea un poco más grueso */
+  transition: color 0.3s ease; /* Transición suave al cambiar el color */
+}
+
+.navbar-links a:hover {
+  color: #00bfa6;
+}

@@ -1,0 +1,104 @@
+.inicio-section { /* Contenedor principal de inicio */
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e0f2f1;
+  border-radius: 15px; /* para que los bordes sean curvos */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.inicio-content { /* Contenido del inicio */
+  display: flex; /* Contenedor flexible */
+  flex-wrap: wrap; /* Que los elementos se ajusten a multiples lineas */
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Espacio entre los elementos */
+}
+.titulo {
+  font-size: 2.5rem;
+  color: #004d40;
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
+}
+.inicio-text {
+  flex: 1 1 300px; /* Permite que el texto ocupe espacio flexible, que se pueda extender si hay espacio o encogerse si no hay espacio suficiente */
+  min-width: 280px;
+}
+
+.inicio-text h1 {
+  font-size: 2.8rem;
+  color: #004d40;
+  margin-bottom: 0.5rem;
+}
+
+.descripcion {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #00695c;
+}
+
+.btn-contact {
+  background-color: #00796b;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+}
+
+.btn-contact:hover {
+  background-color: #004d40;
+}
+
+.mensaje {
+  margin-top: 1rem;
+  color: #004d40;
+  font-weight: 600; /* Para que el mensaje de agradecimiento sea más destacado */
+}
+
+.inicio-image {
+  flex: 1 1 280px;
+  min-width: 280px;
+  text-align: center;
+}
+
+.inicio-image img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 55%; /* Curvatura de la imagen */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.redes-sociales {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  font-size: 1.8rem;
+  justify-content: center;
+}
+
+.redes-sociales button, .redes-sociales a {
+  display: inline-flex; /* para que el botón se adapte al tamaño del ícono */
+  align-items: center;            
+  justify-content: center;        
+  width: 1.8em;                   
+  height: 1.8em;                 
+  font-size: 1.8rem;              
+  padding: 0;                    
+  border: none;                  
+  background: none;             
+  cursor: pointer;              
+  color: #333;              
+  transition: color 0.3s;
+}
+
+.redes-sociales button:hover,
+.redes-sociales a:hover {
+  color: #0077b5;
+}
+

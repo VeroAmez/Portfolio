@@ -1,0 +1,116 @@
+.App {
+  min-height: 100vh; /*Todo el alto de vista  */ 
+  display: flex; /* Contenedor flexible */
+  flex-wrap: wrap; /* Que los elementos se ajusten a multiples lineas */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedor-proyecto {
+  width: 1170px; /* ancho del contenedor del proyecto */
+  height: 430px; /* altura del contenedor */
+  margin: 10px 10px 50px; /* 10 arriba, 10 derecha y 50 abajo */
+  display: flex; /* Contenedor flexible */
+  align-items: center;
+  justify-content: center;
+  background-color: #f0fdfa;
+  border-left: 6px solid #00bfa6;
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%); /* Sombra del contenedor */
+  overflow: hidden; /* para que no se salga el contenido */
+  gap: 10px; /* Espacio entre imagen y texto */
+}
+
+.imagen-proyecto {
+  height: 100%; /* Altura completa del contenedor */
+  width: 450px; /* ancho del contenedor */
+  max-height: 340px; /* Altura maxima de la imagen */
+  object-fit: contain; /* La imagen se escala */
+  padding-left: 15px; /* Espacio a la izquierda */
+}
+
+.contenedor-texto-proyecto {
+  flex: 1; /* Espacio igualitario */
+  text-align: center;
+  padding: 40px; /* Espacio interno */
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem; /* Altura entre las lineas de texto */
+  overflow-y: auto; /* por si hay mucho texto */
+  max-height: 350px; /* para que no se salga del contenedor */
+}
+
+.nombre-proyecto {
+  font-size: 1.3rem;
+  text-align: center;;
+}
+
+.herramientas-proyecto {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+
+a.herramientas-proyecto {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  padding-bottom: 20px;
+  text-decoration: none; /* Quitar el subrayado */
+  color: #004d40;
+}
+
+.texto-proyecto {
+  font-size: 1.3rem;
+  text-align: justify;
+  padding-right: 10px;
+}
+
+.carousel-wrapper {
+  max-height:100%; 
+  flex-shrink: 0; /* para que no se reduzca */
+  width: 450px; 
+  display: flex; /* Contenedor flexible */
+  align-items: center;
+  justify-content: center;
+}
+
+.proyecto-privado {
+  color: gray;
+  font-style: italic;
+  pointer-events: none; /* Para que no se pueda hacer clic */
+}
+
+/* Para pantallas pequeñas se trabaje con columnas */
+@media screen and (max-width: 768px) {
+  .contenedor-proyecto {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .carousel-wrapper,
+  .imagen-proyecto {
+    width: 100% !important;
+    height: auto;
+    padding: 0;
+  }
+
+  .contenedor-texto-proyecto {
+    padding: 20px;
+    max-height: none;
+    overflow: visible;
+    text-align: left;
+  }
+
+  .nombre-proyecto,
+  .herramientas-proyecto,
+  .texto-proyecto {
+    text-align: left;
+  }
+
+  .texto-proyecto {
+    font-size: 1rem;
+    padding-right: 0;
+  }
+}
