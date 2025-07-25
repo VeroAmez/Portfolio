@@ -1,20 +1,21 @@
-.inicio-section { /* Contenedor principal de inicio */
+.inicio-section {
   max-width: 900px;
   margin: 4rem auto;
   padding: 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #e0f2f1;
-  border-radius: 15px; /* para que los bordes sean curvos */
+  border-radius: 15px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
-.inicio-content { /* Contenido del inicio */
-  display: flex; /* Contenedor flexible */
-  flex-wrap: wrap; /* Que los elementos se ajusten a multiples lineas */
+.inicio-content {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 2rem; /* Espacio entre los elementos */
+  gap: 2rem;
 }
+
 .titulo {
   font-size: 2.5rem;
   color: #004d40;
@@ -23,8 +24,9 @@
   font-weight: 700;
   font-family: 'Segoe UI', sans-serif;
 }
+
 .inicio-text {
-  flex: 1 1 300px; /* Permite que el texto ocupe espacio flexible, que se pueda extender si hay espacio o encogerse si no hay espacio suficiente */
+  flex: 1 1 300px;
   min-width: 280px;
 }
 
@@ -47,8 +49,8 @@
   border: none;
   border-radius: 8px;
   font-size: 1.1rem;
-  cursor: pointer; /* Cambia el cursor al pasar por encima */
-  transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .btn-contact:hover {
@@ -58,7 +60,7 @@
 .mensaje {
   margin-top: 1rem;
   color: #004d40;
-  font-weight: 600; /* Para que el mensaje de agradecimiento sea más destacado */
+  font-weight: 600;
 }
 
 .inicio-image {
@@ -70,7 +72,7 @@
 .inicio-image img {
   width: 100%;
   max-width: 280px;
-  border-radius: 55%; /* Curvatura de la imagen */
+  border-radius: 55%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -82,18 +84,19 @@
   justify-content: center;
 }
 
-.redes-sociales button, .redes-sociales a {
-  display: inline-flex; /* para que el botón se adapte al tamaño del ícono */
-  align-items: center;            
-  justify-content: center;        
-  width: 1.8em;                   
-  height: 1.8em;                 
-  font-size: 1.8rem;              
-  padding: 0;                    
-  border: none;                  
-  background: none;             
-  cursor: pointer;              
-  color: #333;              
+.redes-sociales button,
+.redes-sociales a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8em;
+  height: 1.8em;
+  font-size: 1.8rem;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #333;
   transition: color 0.3s;
 }
 
@@ -102,3 +105,54 @@
   color: #0077b5;
 }
 
+
+@media (max-width: 768px) {
+  .inicio-content {
+    flex-direction: column; 
+  }
+
+  .inicio-text, .inicio-image {
+    min-width: 100%;
+    flex: unset;
+    text-align: center;
+  }
+
+  .inicio-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .btn-contact {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .redes-sociales {
+    justify-content: center;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .inicio-section {
+    padding: 1rem;
+    margin: 2rem 1rem;
+  }
+
+  .inicio-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .descripcion {
+    font-size: 1rem;
+  }
+
+  .btn-contact {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .redes-sociales {
+    gap: 15px;
+    font-size: 1.6rem;
+  }
+}
