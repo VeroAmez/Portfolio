@@ -30,23 +30,30 @@
   color: #00bfa6;
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  font-size: 24px;
+  color: white;
+  border: none;
+}
+
 @media (max-width: 768px) {
   .navbar-links {
     display: none;
     flex-direction: column;
-    background-color: #0e1e25;
-    position: absolute;
-    top: 100%;
-    right: 0;
     width: 100%;
-    padding: 1rem;
+    background-color: #222;
+    position: absolute;
+    top: 60px;
+    left: 0;
   }
 
   .navbar-links.active {
     display: flex;
   }
 
-  .navbar-toggle {
+  .menu-toggle {
     display: block;
   }
 }
