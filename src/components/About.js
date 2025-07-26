@@ -24,7 +24,7 @@ export default function About() {
                 <strong>Bachillerato:</strong> CBTIS 226 de Ciudad Guzmán, modalidad técnico en programación. Bases fundamentales en programación, redes y bases de datos.
               </li>
               <li>
-                <strong>Licenciatura:</strong> Ingeniería en Sistemas Computacionales en el Tecnológico de Ciudad Guzmán. Con especialidad en Inteligencia Artificial Aplicada. Materias terminadas en diciembre 2024, graduación en marzo 2025 y titulación en abril 2025.
+                <strong>Licenciatura:</strong> Ingeniería en Sistemas Computacionales en el Tecnológico de Ciudad Guzmán. Con especialidad en Inteligencia Artificial Aplicada. Materias terminadas en diciembre 2024, graduación y titulación en 2025.
               </li>
             </ul>
           </div>
