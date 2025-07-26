@@ -32,7 +32,7 @@ export default function About() {
           <div className="bloque">
             <h3>Habilidades técnicas</h3>
             <ul>
-              <li>JavaScript (Avanzado), PHP (Avanzado), Python (Intermedio)</li>
+              <li>JavaScript (Avanzado), PHP (Avanzado), Python (Intermedio), Java (Avanzado)</li>
               <li>React, CSS, HTML</li>
               <li>MySQL, PHPMyAdmin</li>
               <li>Git y GitHub</li>
