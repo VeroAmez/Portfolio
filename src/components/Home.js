@@ -31,7 +31,7 @@ export default function Home() {
             >
               <FaLinkedin />
             </button>
-            <a href="https://github.com/tu-github" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/VeroAmez" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
             <a href="mailto:vero_mtz_08@hotmail.com">
